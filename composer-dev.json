@@ -1,0 +1,38 @@
+{
+	"name": "naas/project",
+	"description": "naas/project",
+	"homepage": "https://github.com/nunoarmando/project",
+	"type": "composer",
+	"license": "MIT",
+	"keywords": ["test repository"],
+	"authors": [
+		{
+			"name": "Nuno Armando",
+			"email": "nunoarmando@gmail.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=8.0",
+
+		"naas/user": "1.0.4",
+		"naas/setting": "@dev"
+	},
+	"require-dev": {},
+	"config": {
+		"process-timeout": 1800
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		},
+		{
+			"type": "path", 
+			"url": "~/work/a-tests/composer/setting",
+			"options": {
+				"symlink": false
+			}
+		}
+	]
+}
